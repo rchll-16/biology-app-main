@@ -15,6 +15,9 @@ import Activity3 from './pages/activity/Activity3';
 import Activity4 from './pages/activity/Activity4';
 import Activity5 from './pages/activity/Activity5';
 
+//Admin
+import AdminLogin from './pages/admin/adminLogin';
+
 function App() {
   return (
     <Router>
@@ -36,6 +39,9 @@ function App() {
 
         {/* Leaderboard */}
         <Route path="/leaderboard" element={<Leaderboard />} />
+
+        {/* Admin */}
+        <Route path="/admin" element={<AdminLogin />} />
 
         {/* 404 Page */}
         <Route path="*" element={<NotFound />} />
